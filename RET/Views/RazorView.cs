@@ -38,11 +38,8 @@ WriteLiteral(" rel=\"stylesheet\"");
 
 WriteLiteral(" href=\"style.css\"");
 
-WriteLiteral(" />\r\n    <script");
-
-WriteLiteral(" type=\"text/javascript\"");
-
-WriteLiteral(@">
+WriteLiteral(@" />
+    <!--<script type=""text/javascript"">
 
         // This javascript method calls C# by setting the browser
         // to a URL with a custom scheme that is registered in C#.
@@ -66,51 +63,36 @@ WriteLiteral(@">
             var elm = document.getElementById('label');
             elm.innerHTML = text;
         }
-    </script>
+    </script>-->
 </head>
 <body>
-    <div");
+    <script");
 
-WriteLiteral(" data-role=\"page\"");
+WriteLiteral(" type=\"text/javascript\"");
 
-WriteLiteral(" data-theme=\"b\"");
-
-WriteLiteral(">\r\n        <form>\r\n\r\n            <div");
-
-WriteLiteral(" data-role=\"content\"");
-
-WriteLiteral(">\r\n\r\n                <h1");
-
-WriteLiteral(" id=\"label\"");
-
-WriteLiteral(">");
+WriteLiteral(">\r\n        location.href = \"http://m.vk.com/audio\";\r\n    </script>\r\n    <!--<div " +
+"data-role=\"page\" data-theme=\"b\">\r\n        <form>\r\n\r\n            <div data-role=\"" +
+"content\">\r\n\r\n                <h1 id=\"label\">");
 
 
-#line 37 "RazorView.cshtml"
+#line 40 "RazorView.cshtml"
                           Write(Model.Text);
 
 
 #line default
 #line hidden
-WriteLiteral("</h1>\r\n\r\n                <input");
+WriteLiteral(@"</h1>
 
-WriteLiteral(" type=\"text\"");
+                <input type=""text"" id=""textbox"" name=""textbox"" />
 
-WriteLiteral(" id=\"textbox\"");
+                <input type=""button"" name=""UpdateLabel"" value=""Click"" onclick=""InvokeCSharpWithFormValues(this)"" />
 
-WriteLiteral(" name=\"textbox\"");
+            </div>
 
-WriteLiteral(" />\r\n\r\n                <input");
-
-WriteLiteral(" type=\"button\"");
-
-WriteLiteral(" name=\"UpdateLabel\"");
-
-WriteLiteral(" value=\"Click\"");
-
-WriteLiteral(" onclick=\"InvokeCSharpWithFormValues(this)\"");
-
-WriteLiteral(" />\r\n\r\n            </div>\r\n\r\n        </form>\r\n    </div>\r\n</body>\r\n</html>\t");
+        </form>
+    </div>-->
+</body>
+</html>	");
 
 }
 }
