@@ -11,7 +11,7 @@ using RET.Models;
 
 namespace RET
 {
-    [Activity(Label = "RET", MainLauncher = true)]
+    [Activity(Label = "RepeateR", MainLauncher = true)]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)
@@ -42,11 +42,11 @@ namespace RET
         {
             public override bool ShouldOverrideUrlLoading(WebView webView, string url)
             {
-
+                return false;
                 // If the URL is not our own custom scheme, just let the webView load the URL as usual
-                var scheme = "hybrid:";
+                //var scheme = "hybrid:";
 
-                if (!url.StartsWith(scheme))
+                /*if (!url.StartsWith(scheme))
                     return false;
 
                 // This handler will treat everything between the protocol and "?"
@@ -54,7 +54,6 @@ namespace RET
                 var resources = url.Substring(scheme.Length).Split('?');
                 var method = resources[0];
                 var parameters = System.Web.HttpUtility.ParseQueryString(resources[1]);
-
                 if (method == "UpdateLabel")
                 {
                     var textbox = parameters["textbox"];
@@ -68,8 +67,7 @@ namespace RET
 
                     webView.LoadUrl("javascript:" + js);
                 }
-
-                return true;
+                return true;*/
             }
         }
     }
