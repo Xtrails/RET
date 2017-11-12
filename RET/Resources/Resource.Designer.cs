@@ -44,6 +44,9 @@ namespace RET
 		public partial class Color
 		{
 			
+			// aapt resource value: 0x7f040002
+			public const int backgroundColor = 2130968578;
+			
 			// aapt resource value: 0x7f040000
 			public const int primaryColor = 2130968576;
 			
@@ -69,12 +72,31 @@ namespace RET
 			// aapt resource value: 0x7f020001
 			public const int Icon = 2130837505;
 			
+			// aapt resource value: 0x7f020002
+			public const int RR_LOGO_loading = 2130837506;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
 			}
 			
 			private Drawable()
+			{
+			}
+		}
+		
+		public partial class Id
+		{
+			
+			// aapt resource value: 0x7f070000
+			public const int webView = 2131165184;
+			
+			static Id()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Id()
 			{
 			}
 		}

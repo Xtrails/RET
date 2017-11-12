@@ -66,16 +66,92 @@ WriteLiteral(@" />
     </script>-->
 </head>
 <body>
-    <script");
+    <img");
+
+WriteAttribute ("src", " src=\"", "\""
+, Tuple.Create<string,object,bool> ("", Href("~/Resources/drawable/RR_LOGO_loading.jpg")
+, false)
+);
+WriteLiteral(" class=\"rr\"");
+
+WriteLiteral(" />\r\n    <div");
+
+WriteLiteral(" class=\"cssload-spinner\"");
+
+WriteLiteral(">\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube0\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube1\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube2\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube3\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube4\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube5\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube6\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube7\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube8\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube9\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube10\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube11\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube12\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube13\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube14\"");
+
+WriteLiteral("></div>\r\n        <div");
+
+WriteLiteral(" class=\"cssload-cube cssload-cube15\"");
+
+WriteLiteral("></div>\r\n    </div>\r\n    <script");
 
 WriteLiteral(" type=\"text/javascript\"");
 
-WriteLiteral(">\r\n        location.href = \"http://m.vk.com/audio\";\r\n    </script>\r\n    <!--<div " +
-"data-role=\"page\" data-theme=\"b\">\r\n        <form>\r\n\r\n            <div data-role=\"" +
-"content\">\r\n\r\n                <h1 id=\"label\">");
+WriteLiteral(">\r\n        //alert(\"ДАРОУ!\");\r\n        //location.href = \"http://m.vk.com/audio\";" +
+"\r\n    </script>\r\n    <!--<div data-role=\"page\" data-theme=\"b\">\r\n        <form>\r\n" +
+"\r\n            <div data-role=\"content\">\r\n\r\n                <h1 id=\"label\">");
 
 
-#line 40 "RazorView.cshtml"
+#line 60 "RazorView.cshtml"
                           Write(Model.Text);
 
 
