@@ -15,6 +15,9 @@ using Android.App;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
+[assembly: Application(Debuggable = true,
+                        Label = "RepeateR",
+                        Theme = "@android:style/Theme.NoTitleBar")]
 
 // Version information for an assembly consists of the following four values:
 //

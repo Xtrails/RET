@@ -2,4 +2,25 @@
 <resources>
     <string name="Hello">Hello World, Click Me!</string>
     <string name="ApplicationName">RepeateR</string>
+  <style name="CustomTheme" parent="android:Theme.NoTitleBar">
+    <item name="android:colorPrimary">@color/primaryColor</item>
+    <item name="android:colorPrimaryDark">@color/primaryColorDark</item>
+    <!--
+      @android:style/Theme.Material (темная версия)
+      @android:style/Theme.Material.Light (светлая версия)
+      @android:style/Theme.Material.Light.DarkActionBar (светлая версия с тёмным заголовком)
+      android:windowNoTitle: используйте значение true, чтобы скрыть заголовок
+      android:windowFullscreen: используйте значение true, чтобы скрыть строку состояния и освободить место для приложения
+      android:windowBackground: ресурс цвета или drawable для фона
+      android:windowContentOverlay: Drawable, который рисуется поверх содержимого окна. 
+      По умолчанию, это тень от строки состояния. Можно использовать null (@null в XML-файле) для удаления ресурса.
+      android:colorPrimary: основной цвет для интерфейса программы - панель, кнопки и т.д.
+      android:colorPrimaryDark: цвет для системных элементов - строка состояния
+      android:colorAccent: Цвет по умолчанию для компонентов, которые находятся в фокусе или активны
+      android:colorControlNormal: Цвет для неактивных компонентов
+      android:colorControlActivated: Цвет для активных компонентов
+      android:colorControlHighlight: Цвет для нажатых элементов интерфейса
+      colorSwitchThumbNormal: и т.д. изучаем документацию
+    -->
+  </style>
 </resources>
