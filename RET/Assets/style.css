@@ -10,9 +10,13 @@ body {
     margin: 0 0 0 0;
 }
 
-.rr {
-    width: 50%;
-    padding: 40% 25% 10% 25%;
+.rr2 {
+    background: url(https://pp.userapi.com/c840135/v840135856/4a969/KamRIFBLu7E.jpg) 20% 20%;
+    /*background-repeat: no-repeat, repeat-x;*/
+    background-position: center;
+    background-size: cover;
+    margin: 45% 0% 10% 0%;
+    padding: 20% 20% 20% 20%;
 }
 
 .cssload-cube {
@@ -183,6 +187,7 @@ body {
     width: 96px;
     height: 96px;
     position: relative;
+    margin-bottom:44%;
 }
 
 

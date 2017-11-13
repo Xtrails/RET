@@ -8,6 +8,8 @@ using Android.Widget;
 using Android.OS;
 using RET.Views;
 using RET.Models;
+using Android.Net;
+using Android.Util;
 
 namespace RET
 {
@@ -16,6 +18,12 @@ namespace RET
     {
         protected override void OnCreate(Bundle bundle)
         {
+            //Проверка подключения к интернету
+            ConnectivityManager connectivityManager = (ConnectivityManager)GetSystemService(ConnectivityService);
+            NetworkInfo networkInfo = connectivityManager.ActiveNetworkInfo;
+            bool isOnline = networkInfo.IsConnected;
+            bool isWifi = networkInfo.Type == ConnectivityType.Wifi;
+
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource

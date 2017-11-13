@@ -66,15 +66,11 @@ WriteLiteral(@" />
     </script>-->
 </head>
 <body>
-    <img");
+    <div");
 
-WriteAttribute ("src", " src=\"", "\""
-, Tuple.Create<string,object,bool> ("", Href("~/Resources/drawable/RR_LOGO_loading.jpg")
-, false)
-);
-WriteLiteral(" class=\"rr\"");
+WriteLiteral(" class=\"rr2\"");
 
-WriteLiteral(" />\r\n    <div");
+WriteLiteral("></div>\r\n    <div");
 
 WriteLiteral(" class=\"cssload-spinner\"");
 
@@ -146,12 +142,23 @@ WriteLiteral("></div>\r\n    </div>\r\n    <script");
 
 WriteLiteral(" type=\"text/javascript\"");
 
-WriteLiteral(">\r\n        //alert(\"ДАРОУ!\");\r\n        //location.href = \"http://m.vk.com/audio\";" +
-"\r\n    </script>\r\n    <!--<div data-role=\"page\" data-theme=\"b\">\r\n        <form>\r\n" +
-"\r\n            <div data-role=\"content\">\r\n\r\n                <h1 id=\"label\">");
+WriteLiteral(@">
+        //alert(""ДАРОУ!"");
+        function ready() {
+            location.href = ""http://m.vk.com/audio"";
+        }
+        document.addEventListener(""DOMContentLoaded"", ready);
+        //location.href = ""http://m.vk.com/audio"";
+    </script>
+    <!--<div data-role=""page"" data-theme=""b"">
+        <form>
+
+            <div data-role=""content"">
+
+                <h1 id=""label"">");
 
 
-#line 60 "RazorView.cshtml"
+#line 64 "RazorView.cshtml"
                           Write(Model.Text);
 
 
