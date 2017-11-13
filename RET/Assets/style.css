@@ -5,7 +5,7 @@
    (BundleResource on iOS or AndroidAsset on Android), to be accessible 
    from a path starting at the root of your hybrid application.  */
 body {
-    background-color: black;
+    background-color: #000000;
     width: 100%;
     margin: 0 0 0 0;
 }
@@ -15,7 +15,7 @@ body {
     /*background-repeat: no-repeat, repeat-x;*/
     background-position: center;
     background-size: cover;
-    margin: 45% 0% 10% 0%;
+    margin: 51% 0% 10% 0%;
     padding: 20% 20% 20% 20%;
 }
 
